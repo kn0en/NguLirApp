@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.kn0en.ngulirapp"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //material design
+    implementation 'com.google.android.material:material:1.2.1'
+
+    //card View
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    //View pager2
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+
+    //gif view
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    def lottieVersion = "3.4.4"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
+    //form validation
+    implementation 'com.mobsandgeeks:android-saripaar:2.0.3'
+
+    //recycler view
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+
+    //show image
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //firebase
+    implementation 'com.google.firebase:firebase-database:19.5.0'
+    implementation 'com.google.firebase:firebase-auth:19.4.0'
+    implementation 'com.google.firebase:firebase-storage:19.2.0'
+    implementation 'com.firebaseui:firebase-ui-auth:6.2.0'
+
+    //date helper
+    implementation "android.helper:datetimepickeredittext:1.0.0"
+
+    //custom font
+    implementation 'io.github.inflationx:calligraphy3:3.1.1'
+    implementation 'io.github.inflationx:viewpump:2.0.3'
+
+    //custom dialog
+    implementation 'com.yarolegovich:lovely-dialog:1.1.0'
+}

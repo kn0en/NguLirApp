@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "950653462100",
+    "firebase_url": "https://ngulirapp.firebaseio.com",
+    "project_id": "ngulirapp",
+    "storage_bucket": "ngulirapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950653462100:android:93c31b22d816580c19afc1",
+        "android_client_info": {
+          "package_name": "com.kn0en.ngulirapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950653462100-1isj6mvn8d4m13f8h2ha3lrf4sm0516q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kn0en.ngulirapp",
+            "certificate_hash": "f22f17b9ef3b7514b951611166ec44ec49efb7cf"
+          }
+        },
+        {
+          "client_id": "950653462100-34ohlnc5lkim3uad2uc7qvass1esgpbn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpVOvNTneIC-2rm2ByakNC9rc5V0Lr9Wk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950653462100-34ohlnc5lkim3uad2uc7qvass1esgpbn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
